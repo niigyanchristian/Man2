@@ -1,0 +1,21 @@
+{
+  "project_name": "Man2",
+  "tasks": [
+    {
+      "task_id": "REQ-001",
+      "task_type": "feature",
+      "recommended_model": "haiku",
+      "title": "Create Hello World HTML file",
+      "description": "Create a new file `index.html` in the project root. The file should be a valid HTML5 document displaying the text 'Hello world' on the page. Use a proper DOCTYPE declaration, <html>, <head>, and <body> tags. Set the page title to 'Hello World'. Place the text 'Hello world' inside an <h1> tag in the body. No external dependencies or frameworks are needed.",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "index.html exists in the project root",
+        "File is valid HTML5 with DOCTYPE declaration",
+        "Page contains the text 'Hello world' in an <h1> element",
+        "File opens correctly in a browser and displays 'Hello world'"
+      ],
+      "filename": "index.html",
+      "language": "html"
+    }
+  ]
+}
