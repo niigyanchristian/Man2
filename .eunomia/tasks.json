@@ -1,0 +1,20 @@
+{
+  "project_name": "Man2",
+  "tasks": [
+    {
+      "task_id": "REQ-001",
+      "task_type": "modify",
+      "recommended_model": "haiku",
+      "title": "Add paragraph 'Hi, I'm Christian' to index.html",
+      "description": "Read the existing file `/Users/one-don/.eunomia/workspace/Man2/index.html` and add a new `<p>Hi, I'm Christian</p>` paragraph inside the `<body>` element. Do not remove or alter any existing content.",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "index.html contains a <p> element with the text \"Hi, I'm Christian\"",
+        "Existing content in index.html is preserved",
+        "File remains valid HTML5"
+      ],
+      "filename": "index.html",
+      "language": "html"
+    }
+  ]
+}
