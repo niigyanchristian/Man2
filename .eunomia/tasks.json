@@ -1,0 +1,22 @@
+{
+  "project_name": "Man2",
+  "tasks": [
+    {
+      "task_id": "REQ-001",
+      "task_type": "feature",
+      "recommended_model": "haiku",
+      "title": "Write Dockerfile for static HTML project",
+      "description": "Create a Dockerfile in the project root (/Users/one-don/.eunomia/workspace/Man2/Dockerfile). The project is a static HTML site (index.html). Use nginx:alpine as the base image to serve the static files. Copy index.html into /usr/share/nginx/html/. Expose port 80. The default nginx CMD is sufficient — no override needed. Example structure:\n\nFROM nginx:alpine\nCOPY index.html /usr/share/nginx/html/index.html\nEXPOSE 80\n\nNo tests are required for a Dockerfile; verify the file is syntactically valid and follows best practices (minimal image, explicit COPY, correct EXPOSE).",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Dockerfile exists at project root",
+        "Uses nginx:alpine base image",
+        "Copies index.html to /usr/share/nginx/html/",
+        "Exposes port 80",
+        "docker build succeeds without errors"
+      ],
+      "filename": "Dockerfile",
+      "language": "dockerfile"
+    }
+  ]
+}
