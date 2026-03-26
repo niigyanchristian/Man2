@@ -1,0 +1,20 @@
+{
+  "project_name": "Man2",
+  "tasks": [
+    {
+      "task_id": "QA-001",
+      "task_type": "qa_validation",
+      "recommended_model": "haiku",
+      "title": "Check if all tests pass",
+      "description": "Validate the existing project by running all available tests. The project is a static HTML site with a Dockerfile. Check: (1) Verify index.html exists and is valid HTML, (2) Verify Dockerfile builds successfully by running 'docker build -t man2-test .' from /Users/one-don/.eunomia/workspace/Man2, (3) Report the status of all checks. No test framework is currently detected — perform structural validation.",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "index.html exists and contains valid HTML",
+        "Dockerfile builds without errors",
+        "All validation checks pass"
+      ],
+      "filename": "/Users/one-don/.eunomia/workspace/Man2/Dockerfile",
+      "language": "bash"
+    }
+  ]
+}
