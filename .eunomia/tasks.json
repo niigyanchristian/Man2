@@ -5,18 +5,16 @@
       "task_id": "REQ-001",
       "task_type": "modify",
       "recommended_model": "haiku",
-      "title": "Fix Dockerfile COPY path for index.html",
-      "description": "The Dockerfile at /Users/one-don/.eunomia/workspace/Man2/Dockerfile is failing with 'COPY failed: stat index.html: file does not exist'. The project structure has index.html at the project root (/Users/one-don/.eunomia/workspace/Man2/index.html). Read the existing Dockerfile and rewrite the COPY instruction to correctly reference index.html from the build context. If the Dockerfile does not exist, create it using nginx:alpine as the base image, with 'COPY index.html /usr/share/nginx/html/index.html' and 'EXPOSE 80'. Also ensure index.html exists at the project root — if it does not, create a minimal Hello World HTML file with a paragraph 'Hi, I'm Christian' inside the body.",
+      "title": "Add paragraph 'Hi, I'm Christian' to index.html",
+      "description": "Read the existing file `/Users/one-don/.eunomia/workspace/Man2/index.html` and add a new `<p>Hi, I'm Christian</p>` paragraph inside the `<body>` element. Do not remove or alter any existing content.",
       "dependencies": [],
       "acceptance_criteria": [
-        "Dockerfile exists at /Users/one-don/.eunomia/workspace/Man2/Dockerfile",
-        "Dockerfile uses nginx:alpine base image",
-        "Dockerfile COPY instruction references index.html correctly from the build context root",
-        "index.html exists at /Users/one-don/.eunomia/workspace/Man2/index.html",
-        "Docker build command would succeed without 'stat index.html: file does not exist' error"
+        "index.html contains a <p> element with the text \"Hi, I'm Christian\"",
+        "Existing content in index.html is preserved",
+        "File remains valid HTML5"
       ],
-      "filename": "/Users/one-don/.eunomia/workspace/Man2/Dockerfile",
-      "language": "dockerfile"
+      "filename": "index.html",
+      "language": "html"
     }
   ]
 }
